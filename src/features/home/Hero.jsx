@@ -3,7 +3,7 @@ import React from "react";
 import avatar from "@/assets/images/Avatar.png";
 export default function Hero() {
   return (
-    <section className="min-h-screen flex items-center bg-glow px-10">
+    <section className="min-h-screen flex items-center bg-glow pt-20 md:pt-0">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center w-full">
         {/* LEFT */}
         <motion.div
@@ -39,10 +39,7 @@ export default function Hero() {
           className="flex justify-center"
         >
           <div className="p-2 rounded-2xl border border-cyan-400/30">
-            <img
-              src={avatar}
-              className="w-80 h-80 object-cover rounded-xl "
-            />
+            <img src={avatar} className="w-80 h-80 object-cover rounded-xl " />
           </div>
         </motion.div>
       </div>
