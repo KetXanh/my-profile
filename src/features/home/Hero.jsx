@@ -4,7 +4,7 @@ import avatar from "@/assets/images/Avatar.png";
 export default function Hero() {
   return (
     <section className="min-h-screen flex items-center bg-glow ">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center w-full">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center w-full px-4 md:px-10">
         {/* LEFT */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -39,10 +39,7 @@ export default function Hero() {
           className="flex justify-center"
         >
           <div className="p-2 rounded-2xl border border-cyan-400/30">
-            <img
-              src={avatar}
-              className="w-80 h-80 object-cover rounded-xl "
-            />
+            <img src={avatar} className="w-80 h-80 object-cover rounded-xl " />
           </div>
         </motion.div>
       </div>
